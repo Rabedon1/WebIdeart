@@ -1,0 +1,6 @@
+# Ignore documentation files
+*.md
+!README.md
+
+# Ignore artifacts directory
+.gemini/
