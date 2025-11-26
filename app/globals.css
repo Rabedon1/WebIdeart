@@ -1,27 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-red: #DC2626;
+  --primary-black: #0A0A0A;
+  --primary-white: #FFFFFF;
+  --accent-red: #EF4444;
+  --accent-dark-red: #991B1B;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--primary-black);
+  background: var(--primary-white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  
+  .gradient-red {
+    background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
+  }
+  
+  .gradient-red-black {
+    background: linear-gradient(135deg, #DC2626 0%, #0A0A0A 100%);
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .shadow-glow-red {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+  }
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-red);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dark-red);
 }
