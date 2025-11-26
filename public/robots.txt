@@ -1,0 +1,8 @@
+# User-agent: *
+Allow: /
+
+# Sitemap - Se generará automáticamente en /sitemap.xml
+# Vercel lo servirá en tu-proyecto.vercel.app/sitemap.xml
+
+# Disallow admin or private paths (if any in the future)
+# Disallow: /admin/

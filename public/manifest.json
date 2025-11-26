@@ -1,0 +1,21 @@
+{
+    "name": "Ideart - Soluciones Visuales Quito",
+    "short_name": "Ideart",
+    "description": "Rotulación, señalética, sellos y artículos promocionales en Quito",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#DC2626",
+    "icons": [
+        {
+            "src": "/images/logo.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "/images/logo.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}
